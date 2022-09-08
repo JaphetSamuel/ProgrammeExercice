@@ -1,0 +1,16 @@
+----------------Fabrication Pistton--------------------
+---800 un certain nombre 
+											|-->Machine Jupe    					------>
+											|	|	TempsUsinage
+											|		TempsDePanne
+													EstEnPanne
+											|	----Liste piece non traite (jupe)
+											|	
+											|
+											|											    |
+----Piece----Dock-Carton(axe, jupe, tete)->Trie--|-->Machine Axe				------>		|----Liste Piece traite-->MP
+	TempsFabrication 																										Piston
+																															!
+											|	----Liste piece non traite(axe)												3 Piece (Axe, Jupe, Tete)
+
+																															LIST<PIston>

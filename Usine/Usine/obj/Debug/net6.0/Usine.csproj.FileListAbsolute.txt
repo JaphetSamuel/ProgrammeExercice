@@ -1,0 +1,15 @@
+D:\SPACE\devspace\Nouveau\Usine\Usine\bin\Debug\net6.0\Usine.exe
+D:\SPACE\devspace\Nouveau\Usine\Usine\bin\Debug\net6.0\Usine.deps.json
+D:\SPACE\devspace\Nouveau\Usine\Usine\bin\Debug\net6.0\Usine.runtimeconfig.json
+D:\SPACE\devspace\Nouveau\Usine\Usine\bin\Debug\net6.0\Usine.dll
+D:\SPACE\devspace\Nouveau\Usine\Usine\bin\Debug\net6.0\Usine.pdb
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.csproj.AssemblyReference.cache
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.AssemblyInfoInputs.cache
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.AssemblyInfo.cs
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.csproj.CoreCompileInputs.cache
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.dll
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\refint\Usine.dll
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.pdb
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\Usine.genruntimeconfig.cache
+D:\SPACE\devspace\Nouveau\Usine\Usine\obj\Debug\net6.0\ref\Usine.dll
