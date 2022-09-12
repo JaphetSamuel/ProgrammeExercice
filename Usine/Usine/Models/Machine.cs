@@ -1,43 +1,51 @@
 ﻿using Usine.Models.Enum;
 
 namespace Usine.Models;
-
-// public class Machine<T> where T: Piece
-
-public abstract class Machine: Brokable, IUsine
+public abstract class Machine: Brokable
 {
     
     public List<Piece> ListPiecesNonTraitées { get; set; }
 
     public abstract TypePiece TypePiece { get; set; }
+    
 
-    public bool AjoutPieceAList(Piece piece)
+    public void AjouterPieceAList(Piece piece)
     {
         //perte performance
-        if (piece.TypePiece != this.TypePiece)
+        if (piece.TypePiece == this.TypePiece)
         {
-            return false;
+            this.ListPiecesNonTraitées.Add(piece);
         }
-        this.ListPiecesNonTraitées.Add(piece);
-        return true;
+        
     }
 
     public void Usinage()
     {
         foreach (Piece piece in ListPiecesNonTraitées)
         {
-            //Todo : checker les types
-            double tempsEcoule = 0;
-            if (EstEnPanne())
-            {
-                tempsEcoule += this.CalculeTempsReparation();
-            }
-
-            tempsEcoule += tempsUsinage;
-
-            piece.TempsUsinage = tempsEcoule;
+            VerifierType(piece.TypePiece);
+            
+            piece.TempsUsinage += tempsUsinage + TempsSiEstEnPanne();
             
             CollectePiece(piece);
+        }
+    }
+
+    private double TempsSiEstEnPanne()
+    {
+        if (EstEnPanne())
+        {
+            return this.CalculeTempsReparation();
+        }
+
+        return 0;
+    }
+
+    private void VerifierType(TypePiece typePiece)
+    {
+        if (typePiece != this.TypePiece)
+        {
+            throw new Exception("Erreur : type de piece non pris en charge par cette machine");
         }
     }
 

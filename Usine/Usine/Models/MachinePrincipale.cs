@@ -17,7 +17,7 @@ public class MachinePrincipale: Brokable
 
     private MachinePrincipale()
     {
-        this.tempsUsinage = 1;
+        this.tempsUsinage = TempsTraitement;
         ListProduit = new List<Produit>();
     }
     //Pour le gain de performance
@@ -72,11 +72,11 @@ public class MachinePrincipale: Brokable
 
         produit.TempsAssemblagePropre = this.tempsUsinage;
         
-        PurificationListAttente(tete, axe, jupe);
-        
         ListProduit.Add(produit);
+        
+        PurificationListAttente(tete, axe, jupe);
     }
-
+ 
     // Retire les elements déjà utilisés pour le montage
     private void PurificationListAttente(Piece tete, Piece axe, Piece jupe)
     {

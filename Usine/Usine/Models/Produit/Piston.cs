@@ -9,16 +9,9 @@ public class Piston : Produit
     {
         this.Composant = pieces;
     }
-
-
     public override double GetTempsAssemblage()
     {
         Console.WriteLine("Ajout du temps d'assemblage propre");
         return base.GetTempsAssemblage() + TempsAssemblagePropre;
-    }
-
-    public double GetTempsAssemblagePropre()
-    {
-        return this.TempsAssemblagePropre;
     }
 }

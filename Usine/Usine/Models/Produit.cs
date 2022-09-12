@@ -1,6 +1,6 @@
 ﻿namespace Usine.Models;
 
-public class Produit
+public  class Produit
 {
     public double TempsAssemblage { get; set; }
     public List<Piece> Composants { get; set; }

@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using Usine.Models;
+﻿using Usine.Models;
 using Usine.Models.Enum;
 
 namespace Usine;
@@ -17,7 +16,7 @@ public static class Dock
     {
         foreach (Piece piece in carton.Contenu)
         {
-            machines.ForEach(m => m.AjoutPieceAList(piece));
+            machines.ForEach(m => m.AjouterPieceAList(piece));
         }
     }
 
